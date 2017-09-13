@@ -53,9 +53,9 @@
                         // first
                         var newLatlngs = [];
                         newLatlngs.push(worldLatlngs);
-                        for (var l in latlngs) {
-                            newLatlngs.push(latlngs[l][0]);
-                        }
+                        latlngs.forEach(function (element) {
+                            newLatlngs.push(element[0]);
+                        });
                         latlngs = [newLatlngs];
                     }
 
